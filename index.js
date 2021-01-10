@@ -41,7 +41,7 @@ inquirer.prompt([
         name: "contribute"
     }
 ]).then(data => {
-    fs.writeFile(`README.md`, generateMarkdown(data), err  => err ? console.error(err) : console.log('Success!'));
+    fs.writeFile(`sampleREADME.md`, generateMarkdown(data), err  => err ? console.error(err) : console.log('Success!'));
 }).catch(err => {
     console.log(err);
 });
